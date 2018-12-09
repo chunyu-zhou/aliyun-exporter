@@ -1,0 +1,41 @@
+credential:
+  access_key_id: <YOUR_KEY_ID>
+  access_key_secret: <YOUR_KEY_SECRET>
+  region_id: cn-hangzhou
+
+metrics:
+  acs_cdn:
+  - name: QPS
+  - name: BPS
+  acs_mongodb:
+  - name: CPUUtilization
+    period: 300
+  - name: MemoryUtilization
+    period: 300
+  - name: DiskUtilization
+    period: 300
+  - name: IOPSUtilization
+    period: 300
+  - name: ConnectionUtilization
+    period: 300
+  acs_ecs_dashboard:
+  - name: CPUUtilization
+  - name: load_5m
+  - name: memory_usedutilization
+  - name: diskusage_utilization
+  - name: net_tcpconnection
+  acs_rds_dashboard:
+  - name: CpuUsage
+  - name: DiskUsage
+  - name: IOPSUsage
+  - name: ConnectionUsage
+  - name: MemoryUsage
+  acs_slb_dashboard:
+  - name: HeathyServerCount
+  - name: UnhealthyServerCount
+  - name: ActiveConnection
+  - name: InactiveConnection
+  - name: TrafficRXNew
+  - name: TrafficTXNew
+
+
